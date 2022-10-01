@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#291717"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+        <ImageView
+            android:id="@+id/BackBtn"
+            android:layout_width="17dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/ic_left_arrow"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340dp"
+            app:srcCompat="@drawable/ic_home"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ResultImageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeBtn"
+        app:layout_constraintVertical_bias="0.386"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+      android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/facebookBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_facebook"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/InstagramBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            app:srcCompat="@drawable/ic_instagram" />
+
+        <ImageView
+
+            android:layout_marginLeft="20dp"
+            android:id="@+id/whatsappBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_whatsapp" />
+
+        <ImageView
+            android:id="@+id/shareBtn"
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:background="@drawable/grey_oval"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_share" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
